@@ -41,11 +41,6 @@ export default function HomePage({ email }: HomePageProps) {
             </div>
           </div>
 
-          {/* Home Text in Center */}
-          <div className="absolute left-1/2 -translate-x-1/2">
-            <h2 className="font-serif text-2xl sm:text-3xl text-white font-light">Home</h2>
-          </div>
-
           {/* Sign Out Button */}
           <Button
             onClick={handleSignOut}

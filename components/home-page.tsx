@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { LogOut } from "lucide-react"
 import Chatbot from "@/components/chatbot"
+import Journal from "@/components/journal"
 
 interface HomePageProps {
   email: string
@@ -80,6 +81,9 @@ export default function HomePage({ email }: HomePageProps) {
 
         {/* Chatbot Component */}
         <Chatbot />
+
+        {/* Journal Component */}
+        <Journal />
       </div>
     </main>
   )

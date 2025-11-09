@@ -201,7 +201,7 @@ export default function Journal() {
                     onClick={() => setIsOpen(false)}
                     variant="outline"
                     className="flex-1 border-black/20 text-black hover:bg-black/5"
-                    >
+                  >
                     Close
                     </Button>
                 </>

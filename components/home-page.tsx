@@ -60,8 +60,7 @@ export default function HomePage({ email }: HomePageProps) {
                 Welcome to Thrupthi
               </h1>
               <p className="text-white/85 text-lg font-light leading-relaxed mb-12">
-                Your mental wellness journey begins here. Explore resources, connect with our community, and discover
-                your path to inner peace.
+                Speak your heart, we're here to listen. ಮನದ ಮಾತು ಹೇಳಿ, ನಾವು ಕೇಳುತ್ತೇವೆ.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-white/95 text-black hover:bg-white rounded-full px-8 py-3 font-medium">

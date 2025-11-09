@@ -89,10 +89,16 @@ export default function Chatbot() {
       {/* Floating Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-white/95 text-black shadow-lg hover:bg-white hover:shadow-xl transition-all duration-300 flex items-center justify-center border border-white/20"
+        className={`fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center border border-white/20
+          ${isOpen ? 'bg-white text-black' : 'bg-white/95 text-black hover:bg-white'}
+        `}
         aria-label="Open chat"
       >
-        {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
+        {isOpen ? (
+          <X className="w-6 h-6" />
+        ) : (
+          <MessageCircle className="w-6 h-6" />
+        )}
       </button>
 
       {/* Chat Window */}

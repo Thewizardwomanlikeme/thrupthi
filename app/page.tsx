@@ -45,7 +45,7 @@ export default function NewsletterLandingPage() {
 
           <div className="max-w-lg mx-auto">
             <div className="opacity-0 animate-fade-in-up animate-delay-200 mb-12 mt-8">
-             <p className="text-white/85 text-base font-light tracking-normal leading-tight my-0 py-0 pt-6">
+             <p className="text-white/85 text-base font-light tracking-normal leading-tight my-0 py-0 pt-4">
                  Your mental wellness companion 
                  <br />
                  ಮನದ ತೃಪ್ತಿಯೇ ನಿಜವಾದ ಶಾಂತಿ

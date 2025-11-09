@@ -69,7 +69,7 @@ export default function NewsletterLandingPage() {
                   </Button>
                 </div>
                 <p className="text-sm text-white/60 mt-6 font-light">
-                  complete privacy • zero judgment • Unsubscribe anytime
+                  complete privacy • zero judgment • ಪ್ರತಿಯೋಬ್ಬರಿಗಾಗಿ 
                 </p>
               </form>
             </div>

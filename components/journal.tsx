@@ -97,7 +97,7 @@ export default function Journal() {
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-white/10">
               <h2 className="text-2xl font-serif text-white">My Journal</h2>
-              <button onClick={() => setIsOpen(false)} className="text-white/60 hover:text-white transition-colors">
+              <button onClick={() => setIsOpen(false)} className="text-red-400 hover:text-red-300 transition-colors">
                 <X className="w-6 h-6" />
               </button>
             </div>

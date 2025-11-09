@@ -64,17 +64,7 @@ export default function HomePage({ email }: HomePageProps) {
               <p className="text-white/85 text-lg font-light leading-relaxed mb-12">
                 Speak your heart, we're here to listen. ಮನದ ಮಾತು ಹೇಳಿ, ನಾವು ಕೇಳುತ್ತೇವೆ.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-white/95 text-black hover:bg-white rounded-full px-8 py-3 font-medium">
-                  Explore
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 rounded-full px-8 py-3 font-medium bg-transparent"
-                >
-                  Learn More
-                </Button>
-              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
             </div>
           </div>
         </div>

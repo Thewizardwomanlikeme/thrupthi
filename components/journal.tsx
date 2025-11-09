@@ -198,12 +198,13 @@ export default function Journal() {
                     Save Entry
                   </Button>
                     <Button
-                    onClick={() => setIsOpen(false)}
-                    variant="outline"
-                    className="flex-1 border-black/20 text-black hover:bg-black/5"
+                      onClick={() => setIsOpen(false)}
+                      variant="outline"
+                      className="flex-1 border-neutral-300 text-neutral-800 hover:bg-neutral-100 dark:border-white/20 dark:text-white dark:hover:bg-white/10"
                     >
-                    Close
+                      Close
                   </Button>
+
                 </>
               ) : (
                 <>

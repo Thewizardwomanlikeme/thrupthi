@@ -131,7 +131,7 @@ export default function Journal() {
                     <textarea
                       value={content}
                       onChange={(e) => setContent(e.target.value)}
-                      placeholder="Dear diary,&#10;Write your thoughts here..."
+                      placeholder="ಪ್ರೀತಿಯ diary ❤︎,&#10;Write your ಜೀವನ ಚರಿತ್ರೆ here..."
                       className="w-full h-64 bg-white/10 border border-white/20 rounded-lg p-4 text-white placeholder-white/40 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     />
                   </div>

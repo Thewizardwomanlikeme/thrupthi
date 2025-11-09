@@ -200,10 +200,11 @@ export default function Journal() {
                     <Button
                       onClick={() => setIsOpen(false)}
                       variant="outline"
-                      className="flex-1 border-white/20 text-white bg-black/30 hover:bg-black/40"
+                      className="flex-1 border-white/20 text-white bg-black/30 hover:bg-white hover:text-black transition-all duration-300"
                     >
                       Close
                   </Button>
+
                 </>
               ) : (
                 <>

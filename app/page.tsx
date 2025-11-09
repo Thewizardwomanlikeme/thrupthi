@@ -41,8 +41,7 @@ export default function NewsletterLandingPage() {
           <div className="max-w-lg mx-auto">
             <div className="opacity-0 animate-fade-in-up animate-delay-200 mb-12 mt-8">
               <p className="text-white/85 text-base font-light tracking-normal leading-tight my-0 py-0">
-                A heritage publication dedicated to local communities and food sovereignty. Weekly field notes and
-                essays.
+                Your mental wellness ಗೆಳತಿ 
               </p>
             </div>
 
@@ -59,14 +58,14 @@ export default function NewsletterLandingPage() {
                       className="flex-1 border-0 bg-transparent text-white placeholder:text-white/70 focus-visible:ring-0 focus-visible:ring-offset-0 px-6 py-3 text-base hover:placeholder:text-white/85 transition-all duration-300"
                     />
                     <Button
-                      type="submit"
+                      type="sign in"
                       className="bg-white/95 text-black hover:bg-slate-500/90 hover:text-white rounded-full px-8 py-3 transition-all duration-300 font-medium shadow-[0_4px_16px_rgba(0,0,0,0.15),0_1px_4px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] hover:shadow-[0_6px_20px_rgba(71,85,105,0.3),0_2px_8px_rgba(71,85,105,0.2)] relative before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:from-white/20 before:to-transparent before:pointer-events-none hover:before:from-slate-400/20"
                     >
                       →
                     </Button>
                   </div>
                   <p className="text-sm text-white/60 mt-6 font-light">
-                    Weekly stories • No spam • Unsubscribe anytime
+                      complete privacy • zero judgment • Unsubscribe anytime
                   </p>
                 </form>
               ) : (

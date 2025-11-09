@@ -34,7 +34,7 @@ export default function NewsletterLandingPage() {
         <div className="w-full text-center">
           <div className="opacity-0 animate-fade-in-up mb-12">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white whitespace-nowrap text-center mb-[-36px] xl:text-9xl font-normal tracking-normal">
-              American Yeoman
+              Thrupthi ತೃಪ್ತಿ
             </h1>
           </div>
 

@@ -46,7 +46,7 @@ export default function Chatbot() {
     setIsLoading(true)
 
     try {
-      const response = await fetch("/chatgpt/chat", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +54,10 @@ export default function Chatbot() {
         body: JSON.stringify({ message: input }),
       })
 
-      if (!response.ok) throw new Error("Failed to get response")
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.error || "Failed to get response")
+      }
 
       const data = await response.json()
 

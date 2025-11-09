@@ -197,13 +197,14 @@ export default function Journal() {
                     <Plus className="w-4 h-4 mr-2" />
                     Save Entry
                   </Button>
-                    <Button
+                  <Button
                       onClick={() => setIsOpen(false)}
                       variant="outline"
-                      className="flex-1 border-white/20 text-white bg-black/30 hover:bg-white hover:text-black transition-all duration-300"
+                      className="flex-1 border-white/20 text-white bg-white/10 hover:bg-white/80 hover:text-black transition-colors duration-500 ease-in-out"
                     >
                       Close
                   </Button>
+
 
                 </>
               ) : (

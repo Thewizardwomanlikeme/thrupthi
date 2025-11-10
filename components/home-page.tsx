@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { LogOut } from "lucide-react"
 import Chatbot from "@/components/chatbot"
 import Journal from "@/components/journal"
+import Settings from "@/components/settings"
 
 interface HomePageProps {
   email: string
@@ -14,7 +15,6 @@ export default function HomePage({ email }: HomePageProps) {
     window.location.reload()
   }
 
-  // Extract initials from email for profile avatar
   const initials = email.split("@")[0].slice(0, 2).toUpperCase()
 
   return (
@@ -43,15 +43,21 @@ export default function HomePage({ email }: HomePageProps) {
             </div>
           </div>
 
-          {/* Sign Out Button */}
-          <Button
-            onClick={handleSignOut}
-            variant="ghost"
-            size="sm"
-            className="text-white hover:bg-white/10 hover:text-white"
-          >
-            <LogOut className="w-5 h-5" />
-          </Button>
+          {/* Settings and Sign Out Button */}
+          <div className="flex items-center gap-4">
+            {/* Settings Component */}
+            <Settings email={email} />
+
+            {/* Sign Out Button */}
+            <Button
+              onClick={handleSignOut}
+              variant="ghost"
+              size="sm"
+              className="text-white hover:bg-white/10 hover:text-white"
+            >
+              <LogOut className="w-5 h-5" />
+            </Button>
+          </div>
         </div>
 
         {/* Main Content Area */}

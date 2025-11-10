@@ -58,10 +58,11 @@ export default function SettingsComponent({ email }: SettingsProps) {
       {/* Settings Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-32 z-40 bg-white/20 backdrop-blur-md border border-white/30 rounded-full p-3 hover:bg-white/30 transition-all hover:scale-110"
+        className="fixed top-6 right-6 z-40 text-white hover:text-white/80 transition-colors"
         aria-label="Open settings"
+        title="Settings"
       >
-        <Sun className="w-6 h-6 text-white" />
+        <Sun className="w-6 h-6" />
       </button>
 
       {/* Settings Modal */}

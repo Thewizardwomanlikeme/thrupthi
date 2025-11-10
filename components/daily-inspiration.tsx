@@ -49,7 +49,7 @@ export default function DailyInspiration() {
     fetch(apiOfTheDay.url)
       .then((res) => res.json())
       .then((data) => setMessage(apiOfTheDay.parse(data)))
-      .catch(() => setError("Couldn’t fetch today’s inspiration 😔"))
+      .catch(() => setError("Couldn't fetch today's inspiration 😔"))
   }, [])
 
   return (

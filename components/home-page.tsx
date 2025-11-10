@@ -44,7 +44,7 @@ export default function HomePage({ email }: HomePageProps) {
           </div>
 
           {/* Settings and Sign Out Button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-8">
             {/* Settings Component */}
             <Settings email={email} />
 

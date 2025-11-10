@@ -5,6 +5,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import HomePage from "@/components/home-page"
+import DailyInspiration from "@/components/daily-inspiration"
 
 export default function NewsletterLandingPage() {
   const [email, setEmail] = useState("")
@@ -19,7 +20,16 @@ export default function NewsletterLandingPage() {
   }
 
   if (isSubmitted) {
-    return <HomePage email={email} />
+    return (
+      <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-slate-900 to-slate-950">
+        <div className="w-full max-w-2xl space-y-8">
+          <DailyInspiration />
+          <div className="mt-12">
+            <HomePage email={email} />
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -45,12 +55,11 @@ export default function NewsletterLandingPage() {
 
           <div className="max-w-lg mx-auto">
             <div className="opacity-0 animate-fade-in-up animate-delay-200 mb-12 mt-8">
-             <p className="text-white/85 text-base font-light tracking-normal leading-tight my-0 py-0 pt-4">
-                 Your mental wellness companion 
-                 <br />
-                 ಮನದ ತೃಪ್ತಿಯೇ ನಿಜವಾದ ಶಾಂತಿ
+              <p className="text-white/85 text-base font-light tracking-normal leading-tight my-0 py-0 pt-4">
+                Your mental wellness companion
+                <br />
+                ಮನದ ತೃಪ್ತಿಯೇ ನಿಜವಾದ ಶಾಂತಿ
               </p>
-
             </div>
 
             <div className="opacity-0 animate-fade-in-up animate-delay-400">
@@ -71,9 +80,7 @@ export default function NewsletterLandingPage() {
                     →
                   </Button>
                 </div>
-                <p className="text-sm text-white/60 mt-6 font-light">
-                  complete privacy • zero judgment • ಪ್ರತಿಯೋಬ್ಬರಿಗಾಗಿ 
-                </p>
+                <p className="text-sm text-white/60 mt-6 font-light">complete privacy • zero judgment • ಪ್ರತಿಯೋಬ್ಬರಿಗಾಗಿ</p>
               </form>
             </div>
           </div>

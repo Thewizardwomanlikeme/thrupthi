@@ -58,7 +58,7 @@ export default function Settings({ email }: SettingsProps) {
       {/* Settings Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed top-6 right-6 z-40 text-white hover:text-white/80 transition-colors p-2"
+        className="fixed top-6 right-6 z-40 text-white hover:text-white/80 transition-colors p-2 mb-2"
         aria-label="Open settings"
         title="Settings"
       >

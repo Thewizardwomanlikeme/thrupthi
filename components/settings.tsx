@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { X, Moon, Sun } from "lucide-react"
+import { X, Moon, Sun, SettingsIcon } from "lucide-react"
 
 interface SettingsProps {
   email: string
 }
 
-export default function SettingsComponent({ email }: SettingsProps) {
+export default function Settings({ email }: SettingsProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isDark, setIsDark] = useState(false)
   const [username, setUsername] = useState("")
@@ -58,11 +58,11 @@ export default function SettingsComponent({ email }: SettingsProps) {
       {/* Settings Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed top-6 right-6 z-40 text-white hover:text-white/80 transition-colors"
+        className="fixed top-6 right-6 z-40 text-white hover:text-white/80 transition-colors p-2"
         aria-label="Open settings"
         title="Settings"
       >
-        <Sun className="w-6 h-6" />
+        <SettingsIcon className="w-5 h-5" />
       </button>
 
       {/* Settings Modal */}

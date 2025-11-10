@@ -21,7 +21,7 @@ export default function NewsletterLandingPage() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-slate-900 to-slate-950">
+      <div className="min-h-screen w-full flex items-center justify-center p-4 bg-gradient-to-br from-slate-900 to-slate-950">
         <div className="w-full max-w-2xl space-y-8">
           <DailyInspiration />
           <div className="mt-12">
@@ -33,10 +33,9 @@ export default function NewsletterLandingPage() {
   }
 
   return (
-    <main className="min-h-screen relative overflow-hidden">
-      {/* Background Image with Overlay */}
+    <main className="min-h-screen w-full relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-pan"
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat animate-slow-pan"
         style={{
           backgroundImage: "url(/images/b.jpeg)",
         }}
@@ -44,9 +43,8 @@ export default function NewsletterLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/50 to-black/75" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center px-4 shadow-none">
-        <div className="w-full text-center">
+      <div className="relative z-10 min-h-screen w-full flex flex-col items-center justify-center px-4">
+        <div className="w-full max-w-lg text-center">
           <div className="opacity-0 animate-fade-in-up mb-12">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white whitespace-nowrap text-center mb-[-36px] xl:text-9xl font-normal tracking-normal">
               Thrupthi ತೃಪ್ತಿ
@@ -60,6 +58,12 @@ export default function NewsletterLandingPage() {
                 <br />
                 ಮನದ ತೃಪ್ತಿಯೇ ನಿಜವಾದ ಶಾಂತಿ
               </p>
+            </div>
+
+            <div className="opacity-0 animate-fade-in-up animate-delay-300 mb-12">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 mt-6 shadow-sm">
+                <DailyInspiration />
+              </div>
             </div>
 
             <div className="opacity-0 animate-fade-in-up animate-delay-400">

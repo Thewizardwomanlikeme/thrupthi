@@ -53,16 +53,16 @@ export default function DailyInspiration() {
   }, [])
 
   return (
-    <div className="flex flex-col items-center justify-center text-center p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-indigo-50 shadow-sm w-full max-w-xl mx-auto animate-fadeIn">
+    <div className="flex flex-col items-center justify-center text-center">
       {error ? (
-        <p className="text-gray-600 italic">{error}</p>
+        <p className="text-white/70 italic text-sm">{error}</p>
       ) : message ? (
         <>
-          <p className="text-xl md:text-2xl font-light text-gray-800 mb-3 leading-snug">“{message.text}”</p>
-          <span className="text-sm text-gray-500">— {message.source} of the Day</span>
+          <p className="text-lg md:text-xl font-light text-white/95 mb-3 leading-snug">"{message.text}"</p>
+          <span className="text-xs text-white/60">— {message.source} of the Day</span>
         </>
       ) : (
-        <p className="text-gray-600 italic">Loading inspiration...</p>
+        <p className="text-white/70 italic text-sm">Loading inspiration...</p>
       )}
     </div>
   )

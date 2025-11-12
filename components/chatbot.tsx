@@ -59,6 +59,7 @@ export default function Chatbot() {
 
       if (!response.ok) {
         const errorData = await response.json()
+        console.error("[v0] API Error:", errorData.error)
         throw new Error(errorData.error || "Failed to get response")
       }
 
@@ -74,10 +75,10 @@ export default function Chatbot() {
 
       setMessages((prev) => [...prev, botMessage])
     } catch (error) {
-      console.error("Error:", error)
+      console.error("[v0] Chat error:", error)
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: "Yenu aytu, ashte time try maaDu 💛",
+        text: "Ashte time try maaDu 💛. API gateway ke credit card verification needed - Vercel project settings check maaDu.",
         sender: "bot",
         timestamp: new Date(),
       }

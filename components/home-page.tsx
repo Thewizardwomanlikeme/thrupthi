@@ -62,6 +62,9 @@ export default function HomePage({ email }: HomePageProps) {
 
         {/* Main Content Area */}
         <div className="relative z-10 flex items-center justify-center px-4 py-16">
+        <div className="px-6 mt-4">
+          <daily-inspiration />
+        </div>
           <div className="max-w-2xl text-center">
             <div className="opacity-0 animate-fade-in-up">
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white mb-8 font-light">

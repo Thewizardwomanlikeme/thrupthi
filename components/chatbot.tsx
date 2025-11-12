@@ -51,7 +51,10 @@ export default function Chatbot() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({
+          message: input,
+          userName: localStorage.getItem("username") || "mithra",
+        }),
       })
 
       if (!response.ok) {
@@ -74,7 +77,7 @@ export default function Chatbot() {
       console.error("Error:", error)
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: "I'm having trouble responding right now. Please try again.",
+        text: "Yenu aytu, ashte time try maaDu 💛",
         sender: "bot",
         timestamp: new Date(),
       }
@@ -90,15 +93,11 @@ export default function Chatbot() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center border border-white/20
-          ${isOpen ? 'bg-white text-black' : 'bg-white/95 text-black hover:bg-white'}
+          ${isOpen ? "bg-white text-black" : "bg-white/95 text-black hover:bg-white"}
         `}
         aria-label="Open chat"
       >
-        {isOpen ? (
-          <X className="w-6 h-6" />
-        ) : (
-          <MessageCircle className="w-6 h-6" />
-        )}
+        {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
       </button>
 
       {/* Chat Window */}

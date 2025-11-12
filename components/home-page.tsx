@@ -5,7 +5,7 @@ import { LogOut } from "lucide-react"
 import Chatbot from "@/components/chatbot"
 import Journal from "@/components/journal"
 import Settings from "@/components/settings"
-import daily-inspiration.tsx from "@/components/daily-inspiration"
+import Dailyinspiration from "@/components/daily-inspiration"
 interface HomePageProps {
   email: string
 }
@@ -63,7 +63,7 @@ export default function HomePage({ email }: HomePageProps) {
         {/* Main Content Area */}
         <div className="relative z-10 flex items-center justify-center px-4 py-16">
         <div className="px-6 mt-4">
-          <daily-inspiration />
+          <Dailyinspiration />
         </div>
           <div className="max-w-2xl text-center">
             <div className="opacity-0 animate-fade-in-up">

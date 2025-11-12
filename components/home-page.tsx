@@ -62,9 +62,6 @@ export default function HomePage({ email }: HomePageProps) {
 
         {/* Main Content Area */}
         <div className="relative z-10 flex items-center justify-center px-4 py-16">
-        <div className="px-6 mt-4">
-          <Dailyinspiration />
-        </div>
           <div className="max-w-2xl text-center">
             <div className="opacity-0 animate-fade-in-up">
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white mb-8 font-light">
@@ -73,7 +70,9 @@ export default function HomePage({ email }: HomePageProps) {
               <p className="text-white/85 text-lg font-light leading-relaxed mb-12">
                 Speak your heart, we're here to listen. ಮನದ ಮಾತು ಹೇಳಿ, ನಾವು ಕೇಳುತ್ತೇವೆ.
               </p>
-
+              <div className="px-6 mt-4">
+                <Dailyinspiration />
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
             </div>
           </div>

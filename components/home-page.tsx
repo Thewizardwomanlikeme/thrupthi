@@ -5,7 +5,7 @@ import { LogOut } from "lucide-react"
 import Chatbot from "@/components/chatbot"
 import Journal from "@/components/journal"
 import Settings from "@/components/settings"
-
+import daily-inspiration.tsx from "@/components/daily-inspiration"
 interface HomePageProps {
   email: string
 }

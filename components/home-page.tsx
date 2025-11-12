@@ -5,6 +5,7 @@ import { LogOut } from "lucide-react"
 import Chatbot from "@/components/chatbot"
 import Journal from "@/components/journal"
 import Settings from "@/components/settings"
+import DailyInspiration from "@/components/daily-inspiration"
 
 interface HomePageProps {
   email: string
@@ -70,6 +71,11 @@ export default function HomePage({ email }: HomePageProps) {
               <p className="text-white/85 text-lg font-light leading-relaxed mb-12">
                 Speak your heart, we're here to listen. ಮನದ ಮಾತು ಹೇಳಿ, ನಾವು ಕೇಳುತ್ತೇವೆ.
               </p>
+
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 mt-6 shadow-sm mb-8">
+                <DailyInspiration />
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
             </div>
           </div>

@@ -30,7 +30,7 @@ const apis = [
     }),
   },
   {
-    url: "https://www.boredapi.com/api/activity",
+    url: "https://zenquotes.io/api/random",
     parse: (data: any): ApiResponse => ({
       text: data.activity,
       source: "Activity Idea",

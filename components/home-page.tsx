@@ -73,14 +73,14 @@ export default function HomePage({ email }: HomePageProps) {
               </p>
 
               <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 mt-6 shadow-sm mb-8">
-                <DailyInspiration />
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
             </div>
           </div>
         </div>
-
+        
+        <DailyInspiration />
         {/* Chatbot Component */}
         <Chatbot />
 

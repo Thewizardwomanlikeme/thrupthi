@@ -29,13 +29,6 @@ const apis = [
       source: "Quote",
     }),
   },
-  {
-    url: "https://www.boredapi.com/api/activity",
-    parse: (data: any): ApiResponse => ({
-      text: data.activity,
-      source: "Activity Idea",
-    }),
-  },
 ]
 
 export default function DailyInspiration() {

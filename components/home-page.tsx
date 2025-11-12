@@ -60,7 +60,9 @@ export default function HomePage({ email }: HomePageProps) {
             </Button>
           </div>
         </div>
-
+        <div className="px-6 mt-4">
+          <DailyInspiration />
+        </div>
         {/* Main Content Area */}
         <div className="relative z-10 flex items-center justify-center px-4 py-16">
           <div className="max-w-2xl text-center">
@@ -80,7 +82,7 @@ export default function HomePage({ email }: HomePageProps) {
           </div>
         </div>
         
-        <DailyInspiration />
+        
         {/* Chatbot Component */}
         <Chatbot />
 

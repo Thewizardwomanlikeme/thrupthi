@@ -5,7 +5,6 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import HomePage from "@/components/home-page"
-import DailyInspiration from "@/components/daily-inspiration"
 
 export default function NewsletterLandingPage() {
   const [email, setEmail] = useState("")
@@ -20,16 +19,7 @@ export default function NewsletterLandingPage() {
   }
 
   if (isSubmitted) {
-    return (
-      <div className="min-h-screen w-full flex items-center justify-center p-4 bg-gradient-to-br from-slate-900 to-slate-950">
-        <div className="w-full max-w-2xl space-y-8">
-          <DailyInspiration />
-          <div className="mt-12">
-            <HomePage email={email} />
-          </div>
-        </div>
-      </div>
-    )
+    return <HomePage email={email} />
   }
 
   return (

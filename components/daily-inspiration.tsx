@@ -16,7 +16,7 @@ const apis = [
     }),
   },
   {
-    url: "https://api.adviceslip.com/advice",
+    url: "https://www.affirmations.dev/",
     parse: (data: any): ApiResponse => ({
       text: data.slip.advice,
       source: "Advice",

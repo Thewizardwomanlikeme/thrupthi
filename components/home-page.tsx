@@ -5,7 +5,6 @@ import { LogOut } from "lucide-react"
 import Chatbot from "@/components/chatbot"
 import Journal from "@/components/journal"
 import Settings from "@/components/settings"
-import DailyInspiration from "@/components/daily-inspiration"
 
 interface HomePageProps {
   email: string
@@ -60,9 +59,7 @@ export default function HomePage({ email }: HomePageProps) {
             </Button>
           </div>
         </div>
-        <div className="px-6 mt-4">
-          <DailyInspiration />
-        </div>
+
         {/* Main Content Area */}
         <div className="relative z-10 flex items-center justify-center px-4 py-16">
           <div className="max-w-2xl text-center">
@@ -74,15 +71,11 @@ export default function HomePage({ email }: HomePageProps) {
                 Speak your heart, we're here to listen. ಮನದ ಮಾತು ಹೇಳಿ, ನಾವು ಕೇಳುತ್ತೇವೆ.
               </p>
 
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 mt-6 shadow-sm mb-8">
-              </div>
-
               <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
             </div>
           </div>
         </div>
-        
-        
+
         {/* Chatbot Component */}
         <Chatbot />
 

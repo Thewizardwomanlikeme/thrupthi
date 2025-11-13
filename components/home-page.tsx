@@ -1,21 +1,30 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { LogOut } from "lucide-react"
+import { LogOut, Book } from "lucide-react"
 import Chatbot from "@/components/chatbot"
 import Journal from "@/components/journal"
 import Settings from "@/components/settings"
 import Dailyinspiration from "@/components/daily-inspiration"
+import { useRouter } from "next/navigation"
+
 interface HomePageProps {
   email: string
 }
 
 export default function HomePage({ email }: HomePageProps) {
+  const router = useRouter()
+
   const handleSignOut = () => {
     window.location.reload()
   }
 
   const initials = email.split("@")[0].slice(0, 2).toUpperCase()
+
+  const handleBooksClick = () => {
+    localStorage.setItem("userEmail", email)
+    router.push("/books")
+  }
 
   return (
     <main className="min-h-screen relative overflow-hidden">
@@ -72,7 +81,15 @@ export default function HomePage({ email }: HomePageProps) {
               <div className="px-6 mt-4">
                 <Dailyinspiration />
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <Button
+                  onClick={handleBooksClick}
+                  className="bg-white/95 text-black hover:bg-slate-500/90 hover:text-white rounded-full px-8 py-3 transition-all duration-300 font-medium"
+                >
+                  <Book className="w-5 h-5 mr-2" />
+                  Explore Books
+                </Button>
+              </div>
             </div>
           </div>
         </div>
